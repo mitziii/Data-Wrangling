@@ -40,23 +40,23 @@ A table full of image predictions (the top three only) alongside each tweet ID, 
 
 **1. Gathering data**
 
->The data for this project is gathered from 3 different sources: from a csv file on hand, a url link and from Twitter API.
+* The data for this project is gathered from 3 different sources: from a csv file on hand, a url link and from Twitter API.
 The first data file is the WeRateDogs Twitter archive. This file is given on hand. Thus, I just need to download this file manually by clicking in given link.
 
->The second data file is the tweet image predictions, i.e., what breed of dog (or other object, animal, etc.) is present in each tweet according to a neural network. This is a flat file tsv which is hosted on Udacity's servers. I have to download it programmatically using the Requests library of Python. This step requires the author to be familiar with Requests library to download a file programmatically with a given url.
+* The second data file is the tweet image predictions, i.e., what breed of dog (or other object, animal, etc.) is present in each tweet according to a neural network. This is a flat file tsv which is hosted on Udacity's servers. I have to download it programmatically using the Requests library of Python. This step requires the author to be familiar with Requests library to download a file programmatically with a given url.
 
->The last dataset contains each tweet's retweet count and favorite ("like") count. In order to acquire this dataset, I had to use the tweet IDs in the file WeRateDogs Twitter archive (the file csv which was downloaded before) to query the Twitter API for each tweet's JSON data using Python's Tweepy library and store each tweet's entire set of JSON data in a file called tweet_json.txt file. Each tweet's JSON data should be written to its own line. This step requires the ability to use Tweepy library to query Twitter API.
+* The last dataset contains each tweet's retweet count and favorite ("like") count. In order to acquire this dataset, I had to use the tweet IDs in the file WeRateDogs Twitter archive (the file csv which was downloaded before) to query the Twitter API for each tweet's JSON data using Python's Tweepy library and store each tweet's entire set of JSON data in a file called tweet_json.txt file. Each tweet's JSON data should be written to its own line. This step requires the ability to use Tweepy library to query Twitter API.
 
 **2. Assessing data**
 
->After gathering each of the above pieces of data, I have assessed them visually and programmatically for quality and tidiness issues. This step ensures that the data conforms with the requirements about quality and tidiness.
+* After gathering each of the above pieces of data, I have assessed them visually and programmatically for quality and tidiness issues. This step ensures that the data conforms with the requirements about quality and tidiness.
 
->Quality issues pertain to the content of data. The condition of quality includes completeness, validity (conforming to a defined schema), accuracy and consistency.
+* Quality issues pertain to the content of data. The condition of quality includes completeness, validity (conforming to a defined schema), accuracy and consistency.
 
->Tidiness issues pertain to the structure of data. These structural problems generally prevent easy analysis. Untidy data is also known as messy data. The requirements for tidy data are:
-   * Each column denotes a variable.
-   * Each observation is a row.
-   * Each type of observational unit forms a table.
+* Tidiness issues pertain to the structure of data. These structural problems generally prevent easy analysis. Untidy data is also known as messy data. The requirements for tidy data are:
+   > Each column denotes a variable.
+   > Each observation is a row.
+   > Each type of observational unit forms a table.
 
 **3. Cleaning Data for this Project**
 
